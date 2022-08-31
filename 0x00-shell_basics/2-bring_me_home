@@ -1,7 +1,2 @@
 #!/bin/bash
-echo enter new directory
-read dir
-if cd $dir
-then 
-echo "changed to $dir"
 pwd
