@@ -1,0 +1,7 @@
+#!/bin/bash 
+echo "enter directory name"
+read dirname
+then 
+echo "changed $dirname"
+pwd
+
