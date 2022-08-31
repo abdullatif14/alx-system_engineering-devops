@@ -1,12 +1,2 @@
-<<<<<<< HEAD
-#!/bin/bash 
-echo "enter directory name"
-read dirname
-then 
-echo "changed $dirname"
-pwd
-
-=======
 #!/bin/bash
-pwd
->>>>>>> 0ef86e3f62d2eae653e3811575e2939d32d11898
+cd
