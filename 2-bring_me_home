@@ -1,0 +1,9 @@
+#!/bin/bash
+clear
+echo enter the name of a directory
+read dirname
+if $dirname
+then 
+echo "changed to $dirname"
+pwd
+
