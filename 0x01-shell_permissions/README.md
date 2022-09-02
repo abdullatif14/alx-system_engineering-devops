@@ -1,1 +1,1 @@
-(2) This script prints effective username of the current user
+(3) A script that prints out all the current user is part of
