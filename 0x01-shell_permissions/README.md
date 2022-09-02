@@ -1,1 +1,1 @@
-(3) A script that prints out all the current user is part of
+(3) Script that prints all the groups the current user is part of
