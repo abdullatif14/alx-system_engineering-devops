@@ -1,1 +1,1 @@
-## Describing Shell Permissions commands
+A script that switches the current user to the user betty
