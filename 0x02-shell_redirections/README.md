@@ -2,4 +2,5 @@
 
 ### Wrting a script that print out the following;
 
-1. Hello World
+0. Hello World
+1. Confuesed Smiley
