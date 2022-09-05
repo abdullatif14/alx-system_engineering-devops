@@ -8,3 +8,4 @@
 3. Display contents of both /etc/passwd and /etc/hosts
 4. How to list the the last 10 lines
 5. Listing the first 10 lines
+6. Print the 3rd lines of a file
