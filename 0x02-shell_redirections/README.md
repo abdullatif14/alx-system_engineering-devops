@@ -9,3 +9,5 @@
 4. How to list the the last 10 lines
 5. Listing the first 10 lines
 6. Print the 3rd lines of a file
+7. Creating a file that and add a text
+8. Overwriting a file that already exists
