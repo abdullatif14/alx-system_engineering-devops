@@ -4,3 +4,4 @@
 
 0. Hello World
 1. Confuesed Smiley
+2. Display contents of the /etc/passwd
