@@ -2,8 +2,8 @@
 #print "Best School"using until loop
 
 count = 0
-until[$count -eq 10]
+until[$count == 10]
 do
 	echo "Best School"
-	count=$((count+1))
+	$((count+1))
 done
