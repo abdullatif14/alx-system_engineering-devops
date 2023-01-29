@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-#print "Best School"using until loop
-
-count = 0
-until [ $count == 10 ]
+# Prints 'Best School' using the until loop
+x=0
+until [ $x == 10 ]
 do
 	echo "Best School"
-	((count++))
+	((x++))
 done
