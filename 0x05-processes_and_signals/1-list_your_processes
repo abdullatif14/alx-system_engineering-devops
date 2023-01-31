@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Use the ps command with specific options to display the process list
+# -e: Show all processes
+# -f: Show full format (includes process hierarchy information)
+# Show process hierarchy as a forest (grouped by parent process)
+ps auxf
