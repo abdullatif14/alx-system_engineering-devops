@@ -5,4 +5,4 @@
 # | grep bash: Filter the output to only show lines containing the word "bash"
 # | awk '{print $2}': Extract the second column (the process ID)
 
-pgrep -ef | grep bash | awk '{print $2}'
+ps -ef | grep bash | awk '{print $2}'
