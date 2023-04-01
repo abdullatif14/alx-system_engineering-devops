@@ -10,9 +10,9 @@ fi
 # Create a backup of the default Nginx configuration file
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
 
-# Use sed to replace the default Nginx configuration with a redirection
+#i Use sed to replace the default Nginx configuration with a redirection
 sed -i '/^}/i \        location /redirect_me {\n            return 301 http://www.example.com/;\n        }' /etc/nginx/sites-available/default
-
+i
 # Restart Nginx to apply the changes
 service nginx restart
 
