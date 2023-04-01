@@ -1,7 +1,18 @@
 #!/usr/bin/env bash
-# Configure your Nginx server so that /redirect_me is redirecting to another page.
 
-sed -i "48i\\\tif (\$request_filename ~ redirect_me){\n\t\t\
-rewrite ^ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n\t}" /etc/nginx/sites-available/default
+# Install Nginx if it is not already installed
+if [ $(dpkg-query -W -f='${Status}' nginx 2>/dev/null | grep -c "ok installed") -eq 0 ];
+then
+  apt-get update
+  apt-get install -y nginx
+fi
 
+# Create a backup of the default Nginx configuration file
+cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
+
+# Use sed to replace the default Nginx configuration with a redirection
+sed -i '/^}/i \        location /redirect_me {\n            return 301 http://www.example.com/;\n        }' /etc/nginx/sites-available/default
+
+# Restart Nginx to apply the changes
 service nginx restart
+
